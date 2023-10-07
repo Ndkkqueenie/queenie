@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Queendalin Ezenwa</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="./images/avatar_g2.jpeg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Queendalin Ezenwa</b></h4>
+    <p class="w3-text-grey">Passionate Software Developer, adept at turning ideas into reality. With a track record of 4+ years crafting seamless apps and managing projects. Skilled in JavaScript and Python.</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <a href="https://github.com/Ndkkqueenie"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/queenba2017" ><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/queendalin-ezenwa-186911135"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="./images/avatar_g2.jpeg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>My Portfolio</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16"> 
+      <button class="w3-button w3-black">App Development</button>
+      <a href="./pages/techPM.html" ><button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Project Management</button></a>
+      <a href="./pages/lowCode.html" ><button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Low-Code</button></a>
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="./images/glam.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <a href="https://boutique-estore.vercel.app/" ><p><b>Glam Boutique</b></p></a>
+        <p>A Commerce.js Boutique E-Store with Next.js. A beautifully designed elegantly developed, end to end commerce experience. Payment integration with Stripe.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="./images/furniture.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <a href="https://glam-furniture.netlify.app" ><p><b>eStore Furniture</b></p></a>
+        <p>This project is an E-commerce furniture store, fully functional and responsive. It was built with React and Commerce.js. Payment integration with Stripe.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="./images/restuarant.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <a href="https://ristorante-foods.netlify.app"><p><b>Ristorante</b></p></a>
+        <p>Resturant web app project with the Hong Kong University Science & Tech. It was built with React, Redux, Express, Nodejs and MongoDB.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="./images/spend.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <a href="https://spendwisely.netlify.app/"><p><b>SpendWisely</b></p></a>
+        <p>SpendWisely is a financial tracking web app built with react, speechly, material-ui and data is stored in localStorage.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="./images/cardork.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <a href="https://github.com/Ndkkqueenie/car-dock#readme"><p><b>Car Dock</b></p></a>
+        <p> A premium e-commerce car marketplace, Car Dock is being built with JavaScript, React Native, Commercejs and Stripe</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="./images/restuarantapp.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <a href="https://github.com/Ndkkqueenie/restuarant-reactNative#readme"><p><b>Ristorante</b></p></a>
+        <p>Resturant app project with the Hong Kong University. It was built with React Native, Redux, Expo, Express, Nodejs and MongoDB.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-16" id="about">
+    <div class="w3-col m6">
+      <img src="./images/me1.jpeg" alt="Me" style="width:100%">
+    </div>
+    <div class="w3-col m6">
+      <img src="./images/avatar_g2.jpeg" alt="Me" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>About Me</b></h4>
+    <p>
+      I am an experienced Frontend React Developer with 4 years of experience in developing responsive web and hybrid applications. 
+      I have worked mostly with HTML, CSS - (<b>Bootstrap, Styled-components, SASS, Material UI</b>), JavaScript - (<b>React.js, React Native, Redux, NodeJS</b>),
+      REST API, AWS, Python - (<b>Automation & Data Analysis</b>) and
+      Project Management skills including Project charter, RACI Chart, Asana, Agile, Words/Docs and Excel.
+    </p>
+    <p>
+      I started my career in web development 2018 as a Trainee Staff at Andela, I gained IT Professional Certifications & Specialisations from a renowed school and enterprises 
+      namely The Hong Kong University of Science and Technology, Google and IBM, as well as a Diploma from Alison.
+      I'm also experienced in successfully leading teams and managing new project developments. 
+      I like to focus on building products that are inclusive of all users with innovative digitalisation!
+    </p>
+    <hr>
+    
+    <h4>Technical Skills</h4>
+    <!-- Progress bars / Skills -->
+    <p>Web Development</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
+    </div>
+    <p>Project Management</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+    </div>
+    <p>Data Visualization</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
+    </div>
+    <p>
+      <a href="./Queendalin_O._Ezenwa_-_Software_Developer.pdf" >
+        <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+          <i class="fa fa-download w3-margin-right"></i>Download Resume
+        </button>
+      </a>
+    </p>
+    <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>queenie.ezenwa@icloud.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>München, DE</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>01774055012</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form name="contact" method="POST" data-netlify="true">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>TECH ACTIVITIES</h3>
+      <p>Organizer at OSUG München </p>
+      <p>Core Member at Shevelopers </p>
+      <p>Volunteer React Teacher at Redi School </p>
+      <p>Buy Me a Coffee <a href="https://paypal.me/queenieEz?country.x=DE&locale.x=en_US" >PayPal.Me</a> </p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>BUCKET LIST</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="./images/workshop.jpeg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">PhD</span><br>
+          <span>PhD from S-Korea</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="./images/gondol.jpeg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">China</span><br>
+          <span>Long Visit to China</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Germany</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Croatia</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">OutSystems</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Nigeria</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">React</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Tiktok</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Projects</span>
+      </p>
+    </div>
+
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">❤️ <a href="https://github.com/Ndkkqueenie" title="github" target="_blank" class="w3-hover-opacity">Queenie </a> 💡<a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

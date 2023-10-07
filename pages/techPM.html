@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Queendalin Ezenwa</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container">
+      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <h4><b>Technical Project Management</b></h4>
+      <p class="w3-text-grey">Qualified and Certified</p>
+    </div>
+    <div class="w3-container">
+      <p>I have work experience as a Technical Project Manager, a Diploma in Project Management Practice and 
+        a Professional Certification from Google. I have also done Virtual Training with Accenture.
+      </p>
+    </div>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="../images/avatar_g2.jpeg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>My Portfolio</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <a href="../index.html"><button class="w3-button w3-black">Back</button></a>
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <a href="https://drive.google.com/drive/folders/1T2o2WPxbHTqb-tnlJ7Qhuyiwvi_Wc30j" ><p><b>Plant Pals</b></p></a>
+        <p>Analyze project docs, define scope, create charter, plan tasks, prioritize milestones, set quality standards, report impact.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <a href="https://drive.google.com/file/d/1CSru8Xl31VdELoSwEINVZQb5jIzSp1n8/view?usp=drivesdk" ><p><b>Diploma PM</b></p></a>
+        <p>Diploma - Project Management in Practice, skills in initiating, planning and running both traditional and agile projects</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <div class="w3-container w3-white">
+        <a href="https://drive.google.com/file/d/1449bveLBzMG-SgN0_-q0vv9I45MmFcB7/view?usp=drivesdk" ><p><b>Google PM</b></p></a>
+        <p>Completed Google's PMP certificate with hands-on assessments. Proficient in traditional & agile project management.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="w3-black w3-center w3-padding-24">❤️ <a href="https://github.com/Ndkkqueenie" title="github" target="_blank" class="w3-hover-opacity">Queenie</a></div>
+
+<!-- End page content -->
+</div>
+<script>
+  // Script to open and close sidebar
+  function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+  }
+  </script>
+</body>
+</html>
