@@ -9,6 +9,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+#more {display: none;}
+#eStoreMore {display: none;}
+#ristoranteMore {display: none;}
+#babysitMore {display: none;}
+#spendMore {display: none;}
+#expoMore {display: none;}
 </style>
 </head>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
@@ -58,24 +64,36 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- First Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="./images/glam.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="./images/glam.png" alt="Boutique" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <a href="https://boutique-estore.vercel.app/" ><p><b>Glam Boutique</b></p></a>
-        <p>A Commerce.js Boutique E-Store with Next.js. A beautifully designed elegantly developed, end to end commerce experience. Payment integration with Stripe.</p>
+        <p>
+          <span id="dots">...</span>
+          <span id="more">A Boutique E-Store with Next.js. An elegantly developed, end to end commerce experience. Payment integration with Stripe.</span>
+        </p>
+        <button onclick="readMore()" id="myBtn" class="w3-white">➕</button>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="./images/furniture.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="./images/furniture.png" alt="Furniture" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <a href="https://glam-furniture.netlify.app" ><p><b>eStore Furniture</b></p></a>
-        <p>This project is an E-commerce furniture store, fully functional and responsive. It was built with React and Commerce.js. Payment integration with Stripe.</p>
+        <p>
+          <span id="eStoreDots">...</span>
+          <span id="eStoreMore">An E-commerce furniture store, fully functional and responsive. It was built with React and Commerce.js. Payment integration with Stripe.</span>
+        </p>
+        <button onclick="eStoreReadMore()" id="eStoremyBtn" class="w3-white">➕</button>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="./images/restuarant.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="./images/restuarant.png" alt="Ristorante" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <a href="https://ristorante-foods.netlify.app"><p><b>Ristorante</b></p></a>
-        <p>Resturant web app project with the Hong Kong University Science & Tech. It was built with React, Redux, Express, Nodejs and MongoDB.</p>
+        <p>
+          <span id="ristoranteDots">...</span>
+          <span id="ristoranteMore">Resturant web app project with the Hong Kong University Science & Tech. It was built with React, Redux, Express, Nodejs and MongoDB.</span>
+          </p>
+          <button onclick="ristoranteReadMore()" id="ristorantemyBtn" class="w3-white">➕</button>
       </div>
     </div>
   </div>
@@ -83,24 +101,36 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- Second Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="./images/spend.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="./images/babysit.png" alt="BabySit" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <a href="https://spendwisely.netlify.app/"><p><b>SpendWisely</b></p></a>
-        <p>SpendWisely is a financial tracking web app built with react, speechly, material-ui and data is stored in localStorage.</p>
+        <a href="https://ndkkqueenie.github.io/babysitters/"><p><b>BabySit</b></p></a>
+        <p>
+          <span id="babysitDots">...</span>
+          <span id="babysitMore">A simple design and responsive website for babysitter, BabySit is built with HTML, W3 CSS, JavaScript, Netlify Form.</span>
+          </p>
+          <button onclick="babysitReadMore()" id="babysitmyBtn" class="w3-white">➕</button>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="./images/cardork.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="./images/spend.png" alt="SpendWisely" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <a href="https://github.com/Ndkkqueenie/car-dock#readme"><p><b>Car Dock</b></p></a>
-        <p> A premium e-commerce car marketplace, Car Dock is being built with JavaScript, React Native, Commercejs and Stripe</p>
+        <a href="https://spendwisely.netlify.app/"><p><b>SpendWisely</b></p></a>
+        <p>
+          <span id="spendDots">...</span>
+          <span id="spendMore">SpendWisely is a financial tracking web app built with react, speechly, material-ui and user data is stored in localStorage.</span>
+        </p>
+        <button onclick="spendReadMore()" id="spendmyBtn" class="w3-white">➕</button>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="./images/restuarantapp.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="./images/restuarantapp.png" alt="Ristorante" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <a href="https://github.com/Ndkkqueenie/restuarant-reactNative#readme"><p><b>Ristorante</b></p></a>
-        <p>Resturant app project with the Hong Kong University. It was built with React Native, Redux, Expo, Express, Nodejs and MongoDB.</p>
+        <p>
+          <span id="expoDots">...</span>
+          <span id="expoMore">Resturant app project with the Hong Kong University. It was built with React Native, Redux, Expo, Express, Nodejs and MongoDB.</span>
+        </p>
+        <button onclick="expoReadMore()" id="expomyBtn" class="w3-white">➕</button>
       </div>
     </div>
   </div>
@@ -172,7 +202,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </div>
     </div>
     <hr class="w3-opacity">
-    <form name="contact" method="POST" data-netlify="true">
+    <form name="contact" target="_blank" method="POST" netlify>
       <div class="w3-section">
         <label>Name</label>
         <input class="w3-input w3-border" type="text" name="Name" required>
@@ -185,7 +215,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <label>Message</label>
         <input class="w3-input w3-border" type="text" name="Message" required>
       </div>
-      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom" onclick="myFunction()"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
     </form>
   </div>
 
@@ -230,23 +260,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </div>
   </footer>
   
-  <div class="w3-black w3-center w3-padding-24">❤️ <a href="https://github.com/Ndkkqueenie" title="github" target="_blank" class="w3-hover-opacity">Queenie </a> 💡<a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+  <div class="w3-black w3-center w3-padding-24">❤️ <a href="https://github.com/Ndkkqueenie" title="github" target="_blank" class="w3-hover-opacity">Queendalin Ezenwa </a> 💡<a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
 
 <!-- End page content -->
 </div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-</script>
-
+<script src="./js/myscripts.js"></script>
+<script src="./js/reset.js"></script>
+<script src="./js/myfunction.js"></script>
 </body>
 </html>
